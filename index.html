@@ -1,0 +1,50 @@
+<html>
+    <head>
+       <title>Mi Aplicación de Selfies</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <h1>Aplicación de voz para tomar selfies🤳🏻
+
+        </h1>
+        <a href="" id="link" download="mi_endentidad_es_descubierta.png"></a>
+
+        <hr>
+        <h4 style="color:red;">Haz clic en permitir cuando aparezca la ventana emergente, después de dar una orden de voz.</h4>
+        
+        <div class="form-group">
+            <h3>Di "toma mi selfie"</h3>
+            <label>Tu salida de voz: </label>
+            <textarea name="" id="textbox" class="form-control" readonly="true"></textarea>
+        </div>
+        <button onclick="start()" class="btn btn-primary">Iniciar</button>
+        <p>Haz clic en el botón Iniciar</p>
+
+        <label>Tu cámara: </label>
+        <div id="camera"></div>
+        <br>
+
+        <label>Tu selfie aparecerá aquí: </label>
+        <div id="resultado"></div>
+        <button onclick="save()"  class="btn btn-primary">
+        guardar
+        </button>
+        <button onclick="borrow()"class="btn btn-primary">borrar</button>
+        <script src="main.js"></script>
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
